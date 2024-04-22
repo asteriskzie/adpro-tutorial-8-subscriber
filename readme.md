@@ -8,3 +8,10 @@ guest:guest@localhost:5672 is the default username and password for RabbitMQ. Th
 ## Simulation slow subscriber 
 ![Slow Subscriber](img/slow-subscriber.png)
 The number of queue in my chart is also 20. I guess the number of queue is 5 times the number of time we run the publisher, becase the publisher sends 5 messages to the message broker in one run. I ran the publisher 4 times, so the number of queue is 20.
+
+## Running multiple subscribers
+![Multiple Subscribers](img/multiple-subscribers.png)
+![Multiple Subscribers RabbitMQ](img/multipe-subscribers-rabbitmq.png)
+
+
+The spike of the message queue is reduced quicker than before as the message queue is distributed to multiple subscribers.
